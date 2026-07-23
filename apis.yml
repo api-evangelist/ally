@@ -1,7 +1,23 @@
 aid: ally
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ally.png
 name: Ally
-description: 'Ally is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: hr-tech. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Ally.io was an OKR and goal-management SaaS platform for people and performance teams,
+  helping organizations set, align, and track objectives and key results across the workforce. Backed by
+  Accel, Greylock, Tiger Global and Addition, the company was acquired by Microsoft in October 2021 and its
+  product was folded into Microsoft Viva Goals. The ally.io domain remains actively hosted but no longer
+  exposes a public developer/API surface; developer, docs and API subdomains do not resolve. This API
+  Evangelist profile is retained as an hr-tech portfolio lead with a probed domain-security posture.'
 url: https://raw.githubusercontent.com/api-evangelist/ally/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Hr Tech
+- OKR
+- Goal Management
+- Performance Management
+- Acquired
+- Microsoft Viva
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +43,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/ally-domain-security.yml
 - type: Website
   url: http://www.ally.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
