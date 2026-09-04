@@ -21,6 +21,8 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+  source:
+  - {url: 'http://www.ally.io', status: 301, note: 'declared website redirects to https://learn.microsoft.com/en-us/viva/goals/goals-retirement — a different registrable domain (ally.io -> microsoft.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ally.png
 name: Ally
 description: 'Ally.io was an OKR and goal-management SaaS platform for people and performance teams,
